@@ -71,17 +71,17 @@ function draw() {
       snow[i].move();
       snow[i].show();
   }
-  image(santa,-map(mic.getLevel(),0,1,0,width/2)+width*11/20,map(sin(frameCount+240),-1,1,-height/100,height/100)+height/20,santa.width,santa.height);
+  image(santa,-map(mic.getLevel(),0,1,0,width/4)+width*11/20,map(sin(frameCount+240),-1,1,-height/100,height/100)+height/20,santa.width,santa.height);
   
   for(var i=0;i<4;i++){
-    image(deer,-map(mic.getLevel(),0,1,0,width/2)+width/6*i,map(sin(frameCount+i*60),-1,1,-height/100,height/100)+height/10,deer.width/2,deer.height/2);
+    image(deer,-map(mic.getLevel(),0,1,0,width/4)+width/7*i+width/12,map(sin(frameCount+i*60),-1,1,-height/100,height/100)+height/10,deer.width/2,deer.height/2);
   }
 
 
   fill(0);
   
-  ellipse(map(mouseX,0,width,width*16.6/20,width*17/20),map(mouseY,0,height,height-img.height/height*width*14/21,height-img.height/height*width*8/21),map(mic.getLevel(),0,1,width/120,width/100));
-  ellipse(map(mouseX,0,width,width*17/20,width*17.4/20),map(mouseY,0,height,height-img.height/height*width*14/21,height-img.height/height*width*8/21),map(mic.getLevel(),0,1,width/120,width/100));
+  ellipse(map(mouseX,0,width,width*16.6/20,width*17/20),map(mouseY,0,height,height-img.height/height*width*13/21,height-img.height/height*width*9/21),map(mic.getLevel(),0,1,width/120,width/100));
+  ellipse(map(mouseX,0,width,width*17/20,width*17.4/20),map(mouseY,0,height,height-img.height/height*width*13/21,height-img.height/height*width*9/21),map(mic.getLevel(),0,1,width/120,width/100));
 
 
 }
