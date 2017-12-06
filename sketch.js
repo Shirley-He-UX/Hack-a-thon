@@ -31,7 +31,7 @@ function setup() {
  }
   for(var i=0;i<treeNum;i++){
      tree[i] =new Tree(
-                  random(0,width*14/20),
+                  random(0,width*12/20),
                   random(height/18),
                   random(-height/4,-height/20),
                   color(random(100,200),random(100,200),random(0,100)));
@@ -80,8 +80,8 @@ function draw() {
 
   fill(0);
   
-  ellipse(map(mouseX,0,width,width*16.6/20,width*17/20),map(mouseY,0,height,height*18.6/20,height*18.8/20),map(mic.getLevel(),0,1,4,12));
-  ellipse(map(mouseX,0,width,width*17/20,width*17.4/20),map(mouseY,0,height,height*18.6/20,height*18.8/20),map(mic.getLevel(),0,1,4,12));
+  ellipse(map(mouseX,0,width,width*16.6/20,width*17/20),map(mouseY,0,height,height-img.height/height*width*14/21,height-img.height/height*width*8/21),map(mic.getLevel(),0,1,width/120,width/100));
+  ellipse(map(mouseX,0,width,width*17/20,width*17.4/20),map(mouseY,0,height,height-img.height/height*width*14/21,height-img.height/height*width*8/21),map(mic.getLevel(),0,1,width/120,width/100));
 
 
 }
