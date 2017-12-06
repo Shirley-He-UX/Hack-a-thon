@@ -10,7 +10,7 @@ var mic;
 var santa;
 
 function preload() {
-  img = loadImage("assets/snowman.svg");
+  //img = loadImage("assets/snowman.svg");
   deer = loadImage("assets/deer.svg");
   santa=loadImage("assets/santa.svg");
 }
@@ -46,7 +46,7 @@ function draw() {
   var bto = color(61,199,190);
   background(lerpColor(bfrom, bto,sin(frameCount/0.7)));
   
-  image(img,-width*0.1,height-img.height/height*width*2.5,width*1.2,img.height/height*width*2.8);
+  //image(img,-width*0.1,height-img.height/height*width*2.5,width*1.2,img.height/height*width*2.8);
   textSize(map(mic.getLevel(),0,1,width/7,width/2));
   
  
@@ -78,10 +78,10 @@ function draw() {
   }
 
 
-  fill(0);
+  //fill(0);
   
-  ellipse(map(mouseX,0,width,width*16.6/20,width*17/20),map(mouseY,0,height,height-img.height/height*width*13/21,height-img.height/height*width*9/21),map(mic.getLevel(),0,1,width/120,width/100));
-  ellipse(map(mouseX,0,width,width*17/20,width*17.4/20),map(mouseY,0,height,height-img.height/height*width*13/21,height-img.height/height*width*9/21),map(mic.getLevel(),0,1,width/120,width/100));
+  //ellipse(map(mouseX,0,width,width*16.6/20,width*17/20),map(mouseY,0,height,height-img.height/height*width*13/21,height-img.height/height*width*9/21),map(mic.getLevel(),0,1,width/120,width/100));
+ // ellipse(map(mouseX,0,width,width*17/20,width*17.4/20),map(mouseY,0,height,height-img.height/height*width*13/21,height-img.height/height*width*9/21),map(mic.getLevel(),0,1,width/120,width/100));
 
 
 }
